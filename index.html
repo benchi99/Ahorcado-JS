@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="../../shantaewink.ico" type="image/x-icon">
+    <script src="assets/js/logica.js" type="application/javascript"></script>
+</head>
+
+<body>
+
+    <!-- PARTE DE ARRIBA  -->
+    <div id="contenedor">
+        <div class="ahorcado">
+            <img src="assets/img/ahorca.png" height="300" id="imagen">
+        </div>
+        <div class="ui">
+            <p>Selecciona categoría</p>
+            <select name="cat" id="cat">
+                <option value="0">CIUDADES</option>
+                <option value="1">DEPORTES</option>
+                <option value="2">VEHÍCULOS</option>
+                <option value="3">LENGUAJES DE PROGRAMACIÓN ESOTÉRICOS</option>
+            </select>
+            <br>
+            <button id="empezar" onclick="empezarJuego()">Empezar</button>
+            <br>
+            <p id="mascara">Pulsa el botón para jugar.</p>
+        </div>
+    </div>
+
+    <!-- TECLADO-->
+    
+    <div class="teclado">
+        <div class="fila">
+            <span class="active" onclick="intentaLetra(this)">q</span>
+            <span class="active" onclick="intentaLetra(this)">w</span>
+            <span class="active" onclick="intentaLetra(this)">e</span>
+            <span class="active" onclick="intentaLetra(this)">r</span>
+            <span class="active" onclick="intentaLetra(this)">t</span>
+            <span class="active" onclick="intentaLetra(this)">y</span>
+            <span class="active" onclick="intentaLetra(this)">u</span>
+            <span class="active" onclick="intentaLetra(this)">i</span>
+            <span class="active" onclick="intentaLetra(this)">o</span>
+            <span class="active" onclick="intentaLetra(this)">p</span>
+        </div>
+        <div class="fila">
+            <span class="active" onclick="intentaLetra(this)">a</span>
+            <span class="active" onclick="intentaLetra(this)">s</span>
+            <span class="active" onclick="intentaLetra(this)">d</span>
+            <span class="active" onclick="intentaLetra(this)">f</span>
+            <span class="active" onclick="intentaLetra(this)">g</span>
+            <span class="active" onclick="intentaLetra(this)">h</span>
+            <span class="active" onclick="intentaLetra(this)">j</span>
+            <span class="active" onclick="intentaLetra(this)">k</span>
+            <span class="active" onclick="intentaLetra(this)">l</span>
+            <span class="active" onclick="intentaLetra(this)">ñ</span>
+        </div>
+        <div class="fila">
+            <span class="active" onclick="intentaLetra(this)">z</span>
+            <span class="active" onclick="intentaLetra(this)">x</span>
+            <span class="active" onclick="intentaLetra(this)">c</span>
+            <span class="active" onclick="intentaLetra(this)">v</span>
+            <span class="active" onclick="intentaLetra(this)">b</span>
+            <span class="active" onclick="intentaLetra(this)">n</span>
+            <span class="active" onclick="intentaLetra(this)">m</span>
+        </div>
+    </div>
+</body>
+</html>
